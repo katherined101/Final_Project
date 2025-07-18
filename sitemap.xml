@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://katherined101.github.io/Final_Project/index.html</loc>
-    <lastmod>2025-07-18T16:15:13.840Z</lastmod>
+    <loc>https://katherined101.github.io/Final_Project/projects.html</loc>
+    <lastmod>2025-07-18T16:52:04.044Z</lastmod>
   </url>
   <url>
-    <loc>https://katherined101.github.io/Final_Project/about.html</loc>
-    <lastmod>2025-07-18T16:15:13.840Z</lastmod>
+    <loc>https://katherined101.github.io/Final_Project/index.html</loc>
+    <lastmod>2025-07-18T16:52:04.044Z</lastmod>
+  </url>
+  <url>
+    <loc>https://katherined101.github.io/Final_Project/projects/Final_Project.html</loc>
+    <lastmod>2025-07-18T16:52:04.044Z</lastmod>
   </url>
 </urlset>
