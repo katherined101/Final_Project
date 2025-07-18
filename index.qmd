@@ -1,7 +1,21 @@
 ---
 title: "Katherine_Dempsey"
+toc: true
+about: 
+  template: trestles
+  links: 
+    - text: GitHub
+      href: https://katherined101.github.io/Final_Project/
+    - text: Email
+      href: 
 ---
 
-This is a Quarto website.
+:::{.column-page}
 
-To learn more about Quarto websites visit <https://quarto.org/docs/websites>.
+# Bio
+
+## Research Goals
+
+## Experience
+
+:::
