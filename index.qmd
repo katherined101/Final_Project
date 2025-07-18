@@ -7,15 +7,13 @@ about:
     - text: GitHub
       href: https://katherined101.github.io/Final_Project/
     - text: Email
-      href: 
+      href: Email
 ---
 
-:::{.column-page}
-
+::: column-page
 # Bio
 
 ## Research Goals
 
 ## Experience
-
 :::
