@@ -1,5 +1,6 @@
 ---
 title: "Katherine_Dempsey"
+image: (Desktop/Bio Photo.heic)
 toc: true
 about: 
   template: trestles
@@ -7,13 +8,16 @@ about:
     - text: GitHub
       href: https://katherined101.github.io/Final_Project/
     - text: Email
-      href: Email
+      href: mailto:katherine-dempsey@ouhsc.edu
 ---
 
 ::: column-page
 # Bio
+Hi! My name is Katherine, and welcome to my journey of learning to code in R. 
 
 ## Research Goals
+I am a 2nd year graduate student, and my current project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.  
 
 ## Experience
+Prior to starting my PhD program, I earned my Bachelor's degree in Biomedical Chemistry from Oral Roberts University and completed a Summer Undergraduate Research Fellowship at the UT Southwestern.
 :::
