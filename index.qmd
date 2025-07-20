@@ -4,7 +4,8 @@ image: "bio_photo.heic"
 toc: true
 about: 
   template: jolla
-    image-shape: round
+  image-shape: round
+  
   links: 
     - text: GitHub
       icon: github
