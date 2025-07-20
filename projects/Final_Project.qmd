@@ -1,8 +1,45 @@
 ---
 title: "Analyzing qPCR Data"
 subtitle: "Intro to Reproducible Data Analysis Using R Final Project"
-author: Katherine Dempsey
+author: Katherine E. Dempsey
 date: "July 24, 2025"
 ---
 
- 
+ ## Workflow
+
+[![**Figure 1:** Overview of workflow for `RQdeltaCT` package](RQdeltaCT_workflow.png)](https://cran.r-project.org/web/packages/RQdeltaCT/vignettes/my-vignette.html#:~:text=The%20presented%20RQdeltaCT%20package%20includes,basic%20programming%20skills%20are%20required)
+
+## 0. Installing Package
+
+You can view the technical details about this package on [CRAN](https://cran.r-project.org/web/packages/RQdeltaCT/index.html) or [GitHub](https://github.com/Donadelnal/RQdeltaCT). Then follow the steps below to install and load the `RQdeltaCT` package. Follow the steps below to install from the CRAN repository.
+
+```{r}
+#| eval: false
+#| warning: true
+
+install.packages("RQdeltaCT")
+
+```
+
+Since you should already have already installed the `devtools` package for this class, you can also install `RQdeltaCT` directly from GitHub instead.
+
+```{r}
+#| eval: false
+
+remotes::install_github("Donadelnal/RQdeltaCT")
+```
+
+Once you have installed `RQdeltaCT`, you can click [here](https://cran.r-project.org/web/packages/RQdeltaCT/RQdeltaCT.pdf) to learn more about what functions are included in this package.
+
+## 1. Importing & Tidying Data
+
+This package includes built-in `read_Ct_long()` and `read_Ct_wide()` functions for importing data, but these only recognize .csv and .txt files. However, most qPCR machines export results as an Excel spreadsheet (.xls, .xlsx). Below is a way to directly import specific sheets from Excel without having to create a separate file.
+
+```{r}
+#| eval: false
+
+# The 'readxl' package allows you to open individual sheets from Excel without having to convert it into .csv or .txt format first
+
+install.packages("readxl")
+```
+
