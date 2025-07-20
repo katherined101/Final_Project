@@ -1,23 +1,29 @@
 ---
 title: "Katherine_Dempsey"
-image: (Desktop/Bio Photo.heic)
+image: "bio_photo.heic"
 toc: true
 about: 
-  template: trestles
+  template: jolla
+    image-shape: round
   links: 
     - text: GitHub
+    - icon: github
       href: https://katherined101.github.io/Final_Project/
+    - text: LinkedIn
+    - icon: linkedin
+      href: www.linkedin.com/in/katherined101
     - text: Email
+    - icon: envelope-fill
       href: mailto:katherine-dempsey@ouhsc.edu
 ---
 
 ::: column-page
 # Bio
-Hi! My name is Katherine, and welcome to my journey of learning to code in R. 
+Hi! My name is Katherine, and I am a 2nd year PhD student at the University of Oklahoma Health Sciences Center.
 
 ## Research Goals
-I am a 2nd year graduate student, and my current project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.  
+I am a member of the Singh Lab in the Department of Oncology Science, and my current research project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.
 
 ## Experience
-Prior to starting my PhD program, I earned my Bachelor's degree in Biomedical Chemistry from Oral Roberts University and completed a Summer Undergraduate Research Fellowship at UT Southwestern.
+Prior to starting my PhD program, I earned my Bachelor's degree in Biomedical Chemistry from Oral Roberts University, where I investigated the cytotoxic effects of 6-gingerol on colorectal cancer. I was also a Summer Undergraduate Research Fellow at UT Southwestern and was involved in validating a novel CRISPR-generated humanized PNPLA3 mouse model for studying non-alcoholic fatty liver disease. 
 :::
