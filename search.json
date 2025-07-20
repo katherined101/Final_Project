@@ -4,27 +4,48 @@
     "href": "projects.html",
     "title": "Projects",
     "section": "",
-    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n07-24-2025\n\n\nAnalyzing qPCR Data\n\n\nKatherine Dempsey\n\n\n\n\n\n\nNo matching items"
+    "text": "Date\n\n\n\nTitle\n\n\n\nAuthor\n\n\n\n\n\n\n\n\n07-24-2025\n\n\nAnalyzing qPCR Data\n\n\nKatherine E. Dempsey\n\n\n\n\n\n\nNo matching items"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Katherine_Dempsey",
+    "title": "Katherine E. Dempsey",
     "section": "",
     "text": "Hi! My name is Katherine, and I am a 2nd year PhD student at the University of Oklahoma Health Sciences Center.\n\n\nI am a member of the Singh Lab in the Department of Oncology Science, and my current research project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.\n\n\n\nPrior to starting my PhD program, I earned my Bachelor’s degree in Biomedical Chemistry from Oral Roberts University, where I investigated the cytotoxic effects of 6-gingerol on colorectal cancer. I was also a Summer Undergraduate Research Fellow at UT Southwestern and was involved in validating a novel CRISPR-generated humanized PNPLA3 mouse model for studying non-alcoholic fatty liver disease."
   },
   {
     "objectID": "index.html#research-goals",
     "href": "index.html#research-goals",
-    "title": "Katherine_Dempsey",
+    "title": "Katherine E. Dempsey",
     "section": "",
     "text": "I am a member of the Singh Lab in the Department of Oncology Science, and my current research project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer."
   },
   {
     "objectID": "index.html#experience",
     "href": "index.html#experience",
-    "title": "Katherine_Dempsey",
+    "title": "Katherine E. Dempsey",
     "section": "",
     "text": "Prior to starting my PhD program, I earned my Bachelor’s degree in Biomedical Chemistry from Oral Roberts University, where I investigated the cytotoxic effects of 6-gingerol on colorectal cancer. I was also a Summer Undergraduate Research Fellow at UT Southwestern and was involved in validating a novel CRISPR-generated humanized PNPLA3 mouse model for studying non-alcoholic fatty liver disease."
+  },
+  {
+    "objectID": "projects/Final_Project.html",
+    "href": "projects/Final_Project.html",
+    "title": "Analyzing qPCR Data",
+    "section": "",
+    "text": "## Workflow"
+  },
+  {
+    "objectID": "projects/Final_Project.html#installing-package",
+    "href": "projects/Final_Project.html#installing-package",
+    "title": "Analyzing qPCR Data",
+    "section": "0. Installing Package",
+    "text": "0. Installing Package\nYou can view the technical details about this package on CRAN or GitHub. Then follow the steps below to install and load the RQdeltaCT package. Follow the steps below to install from the CRAN repository.\n\ninstall.packages(\"RQdeltaCT\")\n\nSince you should already have already installed the devtools package for this class, you can also install RQdeltaCT directly from GitHub instead.\n\nremotes::install_github(\"Donadelnal/RQdeltaCT\")\n\nOnce you have installed RQdeltaCT, you can click here to learn more about what functions are included in this package."
+  },
+  {
+    "objectID": "projects/Final_Project.html#importing-tidying-data",
+    "href": "projects/Final_Project.html#importing-tidying-data",
+    "title": "Analyzing qPCR Data",
+    "section": "1. Importing & Tidying Data",
+    "text": "1. Importing & Tidying Data\nThis package includes built-in read_Ct_long() and read_Ct_wide() functions for importing data, but these only recognize .csv and .txt files. However, most qPCR machines export results as an Excel spreadsheet (.xls, .xlsx). Below is a way to directly import specific sheets from Excel without having to create a separate file.\n\n# The 'readxl' package allows you to open individual sheets from Excel without having to convert it into .csv or .txt format first\n\ninstall.packages(\"readxl\")"
   }
 ]
