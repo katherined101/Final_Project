@@ -7,13 +7,13 @@ about:
     image-shape: round
   links: 
     - text: GitHub
-    - icon: github
+      icon: github
       href: https://katherined101.github.io/Final_Project/
     - text: LinkedIn
-    - icon: linkedin
+      icon: linkedin
       href: www.linkedin.com/in/katherined101
     - text: Email
-    - icon: envelope-fill
+      icon: envelope-fill
       href: mailto:katherine-dempsey@ouhsc.edu
 ---
 
