@@ -1,5 +1,8 @@
 ---
-title: "About"
+title: "Analyzing qPCR Data"
+subtitle: "Intro to Reproducible Data Analysis Using R Final Project"
+author: Katherine Dempsey
+date: "July 24, 2025"
 ---
 
-About this site
+ 

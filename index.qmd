@@ -19,5 +19,5 @@ Hi! My name is Katherine, and welcome to my journey of learning to code in R.
 I am a 2nd year graduate student, and my current project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.  
 
 ## Experience
-Prior to starting my PhD program, I earned my Bachelor's degree in Biomedical Chemistry from Oral Roberts University and completed a Summer Undergraduate Research Fellowship at the UT Southwestern.
+Prior to starting my PhD program, I earned my Bachelor's degree in Biomedical Chemistry from Oral Roberts University and completed a Summer Undergraduate Research Fellowship at UT Southwestern.
 :::
