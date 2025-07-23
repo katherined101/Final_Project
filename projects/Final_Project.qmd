@@ -5,7 +5,7 @@ author: Katherine E. Dempsey
 date: "July 24, 2025"
 ---
 
- ## Workflow
+## Workflow
 
 [![**Figure 1:** Overview of workflow for `RQdeltaCT` package](RQdeltaCT_workflow.png)](https://cran.r-project.org/web/packages/RQdeltaCT/vignettes/my-vignette.html#:~:text=The%20presented%20RQdeltaCT%20package%20includes,basic%20programming%20skills%20are%20required)
 

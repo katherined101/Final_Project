@@ -9,12 +9,12 @@ about:
   links: 
     - text: GitHub
       icon: github
-      href: https://katherined101.github.io/Final_Project/
+      href: https://github.com/katherined101
     - text: LinkedIn
       icon: linkedin
       href: https://www.linkedin.com/in/katherined101
     - text: Email
-      icon: envelope-fill
+      icon: envelope-heart
       href: mailto:katherine-dempsey@ouhsc.edu
 ---
 

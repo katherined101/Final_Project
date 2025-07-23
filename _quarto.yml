@@ -7,13 +7,18 @@ website:
     left:
       - href: index.qmd
         text: Home
+        icon: house-heart-fill
       - href: projects.qmd
         text: Projects
-
+        icon: clipboard-data
+  page-footer: 
+    background: "#bfd3e6"  
+    right: Copyright 2025, Katherine E. Dempsey
 
 format:
   html:
     theme: styles.scss
+    mainfont: Newsreader 400
     toc: true
 
 
