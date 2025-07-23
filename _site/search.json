@@ -5,5 +5,61 @@
     "title": "About",
     "section": "",
     "text": "About this site"
+  },
+  {
+    "objectID": "projects/RQdeltaCT_FinalProject/Final_Project.html",
+    "href": "projects/RQdeltaCT_FinalProject/Final_Project.html",
+    "title": "qPCR Fold Change Analysis Using RQdeltaCT",
+    "section": "",
+    "text": "Figure 1: Overview of workflow for RQdeltaCT package"
+  },
+  {
+    "objectID": "projects/RQdeltaCT_FinalProject/Final_Project.html#workflow",
+    "href": "projects/RQdeltaCT_FinalProject/Final_Project.html#workflow",
+    "title": "qPCR Fold Change Analysis Using RQdeltaCT",
+    "section": "",
+    "text": "Figure 1: Overview of workflow for RQdeltaCT package"
+  },
+  {
+    "objectID": "projects/RQdeltaCT_FinalProject/Final_Project.html#installing-package",
+    "href": "projects/RQdeltaCT_FinalProject/Final_Project.html#installing-package",
+    "title": "qPCR Fold Change Analysis Using RQdeltaCT",
+    "section": "0. Installing Package",
+    "text": "0. Installing Package\nYou can view the technical details about this package on CRAN or GitHub. Then follow the steps below to install and load the RQdeltaCT package. Follow the steps below to install from the CRAN repository.\n\ninstall.packages(\"RQdeltaCT\")\n\nSince you should already have already installed the devtools package for this class, you can also install RQdeltaCT directly from GitHub instead.\n\nremotes::install_github(\"Donadelnal/RQdeltaCT\")\n\nOnce you have installed RQdeltaCT, you can click here to learn more about what functions are included in this package."
+  },
+  {
+    "objectID": "projects/RQdeltaCT_FinalProject/Final_Project.html#importing-tidying-data",
+    "href": "projects/RQdeltaCT_FinalProject/Final_Project.html#importing-tidying-data",
+    "title": "qPCR Fold Change Analysis Using RQdeltaCT",
+    "section": "1. Importing & Tidying Data",
+    "text": "1. Importing & Tidying Data\nThis package includes built-in read_Ct_long() and read_Ct_wide() functions for importing data, but these only recognize .csv and .txt files. However, most qPCR machines export results as an Excel spreadsheet (.xls, .xlsx). Below is a way to directly import specific sheets from Excel without having to create a separate file.\n\n# The 'readxl' package allows you to open individual sheets from Excel without having to convert it into .csv or .txt format first\n\ninstall.packages(\"readxl\")\n\n\n# Load necessary packages\n\nlibrary(readxl)\nlibrary(tidyverse)\nlibrary(RQdeltaCT)\n\n# Your imported data must contain the column headings \"Sample\", \"Group\", \"Gene\", and \"Ct\"\n\nraw_data &lt;- read_excel(\"qPCR_data3.xls\", sheet = \"Results\")\nglimpse(raw_data)\n\nRows: 168\nColumns: 38\n$ `Block Type`     &lt;chr&gt; \"Calibration Background is expired\", \"Calibration Bac…\n$ `384-Well Block` &lt;chr&gt; \"No\", \"02-12-2025\", \"No\", \"02-12-2025\", \"No\", \"02-12-…\n$ ...3             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...4             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...5             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...6             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...7             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...8             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...9             &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...10            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...11            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...12            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...13            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...14            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...15            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...16            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...17            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...18            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...19            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...20            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...21            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...22            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...23            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...24            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...25            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...26            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...27            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...28            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...29            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...30            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...31            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...32            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...33            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...34            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...35            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...36            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...37            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n$ ...38            &lt;chr&gt; NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, NA, N…\n\n\nYou can also play around with sample data that is included with the package.\n\ndata(data.Ct)\nstr(data.Ct)\n\n'data.frame':   1288 obs. of  5 variables:\n $ Sample: chr  \"AAA1\" \"AAA10\" \"AAA12\" \"AAA13\" ...\n $ Gene  : chr  \"ANGPT1\" \"ANGPT1\" \"ANGPT1\" \"ANGPT1\" ...\n $ Ct    : chr  \"32.563\" \"34.648\" \"35.059\" \"37.135\" ...\n $ Group : chr  \"AAA\" \"AAA\" \"AAA\" \"AAA\" ...\n $ Flag  : chr  \"OK\" \"OK\" \"OK\" \"OK\" ..."
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Katherine E. Dempsey",
+    "section": "",
+    "text": "Hi! My name is Katherine, and I am a 2nd year PhD student at the University of Oklahoma Health Sciences Center.\n\n\nI am a member of the Singh Lab in the Department of Oncology Science, and my current research project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer.\n\n\n\nPrior to starting my PhD program, I earned my Bachelor’s degree in Biomedical Chemistry from Oral Roberts University, where I investigated the cytotoxic effects of 6-gingerol on colorectal cancer. I was also a Summer Undergraduate Research Fellow at UT Southwestern and was involved in validating a novel CRISPR-generated humanized PNPLA3 mouse model for studying non-alcoholic fatty liver disease."
+  },
+  {
+    "objectID": "index.html#research-goals",
+    "href": "index.html#research-goals",
+    "title": "Katherine E. Dempsey",
+    "section": "",
+    "text": "I am a member of the Singh Lab in the Department of Oncology Science, and my current research project focuses on how tumor cells reprogram stromal cell metabolism in pancreatic cancer."
+  },
+  {
+    "objectID": "index.html#experience",
+    "href": "index.html#experience",
+    "title": "Katherine E. Dempsey",
+    "section": "",
+    "text": "Prior to starting my PhD program, I earned my Bachelor’s degree in Biomedical Chemistry from Oral Roberts University, where I investigated the cytotoxic effects of 6-gingerol on colorectal cancer. I was also a Summer Undergraduate Research Fellow at UT Southwestern and was involved in validating a novel CRISPR-generated humanized PNPLA3 mouse model for studying non-alcoholic fatty liver disease."
+  },
+  {
+    "objectID": "projects.html",
+    "href": "projects.html",
+    "title": "Projects",
+    "section": "",
+    "text": "Date\n\n\nTitle\n\n\nAuthor\n\n\n\n\n\n\n07-24-2025\n\n\nqPCR Fold Change Analysis Using RQdeltaCT\n\n\nKatherine E. Dempsey\n\n\n\n\n\nNo matching items"
   }
 ]
