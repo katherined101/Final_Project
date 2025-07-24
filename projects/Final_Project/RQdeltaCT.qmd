@@ -11,7 +11,7 @@ The goal of this project was to develop a well-documented script that streamline
 
 ## Workflow
 
-[![**Figure 1:** Overview of workflow for `RQdeltaCT` package](RQdeltaCT_workflow.png)](https://cran.r-project.org/web/packages/RQdeltaCT/vignettes/my-vignette.html#:~:text=The%20presented%20RQdeltaCT%20package%20includes,basic%20programming%20skills%20are%20required)
+[![**Figure 1:** Overview of workflow for `RQdeltaCT` package](Figure1_RQdeltaCT_Workflow.png)](https://cran.r-project.org/web/packages/RQdeltaCT/vignettes/my-vignette.html#:~:text=The%20presented%20RQdeltaCT%20package%20includes,basic%20programming%20skills%20are%20required)
 
 ## 0. Installing Package
 
@@ -47,7 +47,7 @@ install.packages("readxl")
 
 Your raw data file will probably look similar to the one below, which requires quite a bit of tidying.
 
-![**Figure 2:** Example of raw qPCR data results](raw_qPCR_data_screenshot.png)
+![**Figure 2:** Example of raw qPCR data results](Figure2_RawqPCR_DataScreenshot.png)
 
 The first step is to import the sheet titled "Raw Data" from the Excel file using the `readxl` package. I also excluded the first 47 rows of irrelevant information pertaining to the qPCR instrument and protocol.
 
@@ -313,7 +313,7 @@ FC_table_10uM |>
 
 When you are evaluating many genes, log10(Fold Change) plots can be useful for quickly telling which ones have upregulated vs downregulated expression. Here is an example from another one of my datasets with more genes.
 
-![**Figure 3:** Fold change plot example](images/clipboard-2793993996.png){alt="Figure 3: Fold change plot example"}
+![**Figure 3:** Fold change plot example](Figure3_FoldChange_PlotExample.png)
 
 ## Conclusion: ⭐️ 3.5/5
 
